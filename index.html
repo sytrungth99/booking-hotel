@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Boocking hotel</title>
+		<link href="./fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		
+	</head>
+	<body>
+		<!--menu của khách sạn-->
+			<div class="menu">
+				<div class="nav">
+					<div class="logo">
+						<img src="./images/logo.png">
+					</div>
+				<nav class="menu-nav-pc">
+					<ul class="nav-list-pc">
+						<li><a href="#" class="nav-link-pc">Giới thiệu</a></li>
+						<li><a href="#" class="nav-link-pc">Căn hộ</a></li>
+						<li><a href="#" class="nav-link-pc">Dịch vụ</a></li>
+						<li><a href="#" class="nav-link-pc">Tin tức</a></li>
+						<li><a href="#" class="nav-link-pc">Liên hệ</a></li>
+					</ul>
+				</nav>
+				
+				<div class="menu-icon">
+					<i class="fas fa-bars"></i>
+
+				</div>					
+				</div>
+				
+			</div>
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./images/2.jpg" alt="Los Angeles" width="100%" height="500">
+				</div>
+				<div class="carousel-item">
+					<img src="./images/3.jpg" alt="Chicago" width="100%" height="500">
+				</div>
+				<div class="carousel-item">
+					<img src="./images/4.jpg" alt="New York" width="100%" height="500">
+				</div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<nav>
+						<h3>Danh mục khách sạn</h3>
+						<ul>
+							<li><a href="#">Khách sạn 5 sao</a></li>
+							<li><a href="#">Khách sạn 4 sao</a></li>
+							<li><a href="#">Khách sạn 3 sao</a></li>
+							<li><a href="#">Khách sạn 2 sao</a></li>
+							<li><a href="#">Khách sạn 1 sao</a></li>
+						</ul>
+						<h3>Phòng khách sạn</h3>
+						<ul>
+							<li><a href="#">Phòng đơn</a></li>
+							<li><a href="#">Phòng đôi</a></li>
+							<li><a href="#">Lầu một</a></li>
+							<li><a href="#">Lầu hai</a></li>
+							<li><a href="#">Lầu ba</a></li>
+						</ul>
+						<h3>Khách sạn phổ biến</h3>
+						<ul>
+							<li><a href="#">Khách sạn Đà Lạt</a></li>
+							<li><a href="#">khách sạn Sapa</a></li>
+							<li><a href="#">Khách sạn Huế</a></li>
+							<li><a href="#">Khách sạn Đồ Sơn</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-10">
+					<!--tìm kiếm khách sạn-->
+					<div class="rows">
+						<span>Tìm kiếm</span>
+							<ul>
+								<li class="tab-item actives" onclick="myfunction('chatluong', this)">chất lượng</li>
+								<li class="tab-item" onclick="myfunction('phobien', this)"> phổ biến</li>
+								<li class="tab-item" onclick="myfunction('thinhhanh', this)">thịnh hành </li>
+							</ul>
+						<input type="text" class="form-control seachs" placeholder="Tìm kiếm">
+					</div>
+					<!--produce của khách sạn-->
+					<div class="row rowproduce" id="chatluong">
+						<div class="col-md-6">
+							<div class="card card1">
+								<img src="./images/8.jpg" alt="sản phẩm 1" class="card-img-top">
+								<div class="card-body">
+									<h4 class="card-title">
+									Khách sạn Nha Trang
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card card1">
+								<img src="./images/9.jpg" alt="sản phẩm 1" class="card-img-top">
+								<div class="card-body">
+									<h4 class="card-title">
+									Khách sạn Đà Lạt
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row rowproduce" id="phobien">
+						<div class="col-md-6">
+							<div class="card">
+								<img src="./images/10.jpg" alt="sản phẩm 1" class="card-img-top">
+								<div class="card-body">
+									<h4 class="card-title">
+									Khách sạn Đồ Sơn
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card">
+								<img src="./images/7.jpg" alt="sản phẩm 1" class="card-img-top">
+								<div class="card-body">
+									<h4 class="card-title">
+									Khách sạn Huế
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row rowproduce" id="thinhhanh">
+						<div class="col-md-6">
+							<div class="card">
+								<img src="./images/9.jpg" alt="sản phẩm 1" class="card-img-top">
+								<div class="card-body">
+									<h4 class="card-title">
+									Khách sạn Đà Lạt
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card">
+								<img src="./images/7.jpg" alt="sản phẩm 1" class="card-img-top">
+								<div class="card-body">
+									<h4 class="card-title">
+									Khách sạn Huế
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--dịch vụ của khách sạn-->
+					
+					<div class="row row-title">
+						<div class="col-md-12">
+							<h2 class="title-service">
+							Dịch vụ của chúng tôi
+							</h2>
+						</div>
+					</div>
+					<div class="row service">
+						<div class="col-md-4">
+							<div class="card card-service">
+								<img src="./images/12.png" alt="dịch vụ 1" class="img-service">
+								<div class="card-body">
+									<p class="card-title">
+										Khách sạn được phủ sóng wifi mạnh mẽ, phục vụ cho quý khách với...
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-service">
+								<img src="./images/13.png" alt="dịch vụ 1" class="img-service">
+								<div class="card-body">
+									<p class="card-title">
+										Khách sạn được phủ sóng wifi mạnh mẽ, phục vụ cho quý khách với...
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-service">
+								<img src="./images/14.png" alt="dịch vụ 1" class="img-service">
+								<div class="card-body">
+									<p class="card-title">
+										Khách sạn được phủ sóng wifi mạnh mẽ, phục vụ cho quý khách với...
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-service">
+								<img src="./images/15.png" alt="dịch vụ 1" class="img-service">
+								<div class="card-body">
+									<p class="card-title">
+										Khách sạn được phủ sóng wifi mạnh mẽ, phục vụ cho quý khách với...
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-service">
+								<img src="./images/16.png" alt="dịch vụ 1" class="img-service">
+								<div class="card-body">
+									<p class="card-title">
+										Khách sạn được phủ sóng wifi mạnh mẽ, phục vụ cho quý khách với...
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="card card-service">
+								<img src="./images/11.png" alt="dịch vụ 1" class="img-service">
+								<div class="card-body">
+									<p class="card-title">
+										Khách sạn được phủ sóng wifi mạnh mẽ, phục vụ cho quý khách với...
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--article của khách sạn-->
+					<div class="row row-title">
+						<div class="col-md-12">
+							<h2 class="title-service">
+							Tin tức mới nhất
+							</h2>
+						</div>
+					</div>
+					
+					<div class="row article">
+						<div class="trai">
+							
+							<div class="article-background1">
+								<a href="#"><img src="./images/17.jfif" class="anh17"></a>
+								
+							</div>
+							<div class="conten-article">
+								<a href="#"><h4 class="title-article">Khách sạn Rosamia Đà Nẵng chuẩn bị khai trương </h4></a>
+								<p class="text-article">Tọa lạc trên bãi biển Mỹ Khê - một trong 6 bãi biển đẹp nhất hành tinh do Tạp chí Forbes bình chọn...</p>
+								
+								
+								
+							</div>
+						</div>
+						<div class="phai">
+							
+							<div class="article-background2.1">
+								<a href="#"><img src="./images/20.jpg" class="anh20"></a>
+								
+							</div>
+							<div class="conten-article">
+								<a href="#"><h4 class="title-article">Kinh doanh khách sạn: Tất cả những điều cần biết để thành công </h4></a>
+								<p class="text-article">Hiện nay, du lịch ở Việt Nam ngày càng phát triển, kéo theo sự bùng nổ trong lĩnh vực kinh doanh dịch vụ lưu trú, trong đó có kinh doanh khách sạn...</p>
+							</div>
+							
+							
+							<div class="article-background2.2">
+								<a href="#"><img src="./images/21.jpg" class="anh21"></a>
+								
+							</div>
+							<div class="conten-article">
+								<a href="#"><h4 class="title-article">Khách sạn Liên Sơn - Đà Lạt đã chào đón khách  </h4></a>
+								<p class="text-article">Tọa lạc trên bãi biển Mỹ Khê - một trong 6 bãi biển đẹp nhất hành tinh do Tạp chí Forbes bình chọn...</p>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!--footer của khách sạn-->
+				<div class="footer">
+					<div class="row">
+						<div class="col-md-3">
+							<h3 class="footer-header">
+							Thông tin khách sạn
+							</h3>
+							<ul class="footer-list">
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">Giới thiệu</a>
+								</li>
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">Tin tức</a>
+								</li>
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">Hỏi đáp</a>
+								</li>
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">Liên hệ</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3 class="footer-header">
+							Đặt phòng thanh toán
+							</h3>
+							<ul class="footer-list">
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">Hướng dẫn thanh toán</a>
+								</li>
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">Hướng dẫn đặt phòng</a>
+								</li>
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">Đặt phòng trực tuyến</a>
+								</li>
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">Tìm kếm căn hộ</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3 class="footer-header">
+							Thông tin liên hệ
+							</h3>
+							<ul class="footer-list">
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">
+										<i class="fas fa-phone-volume"></i>
+									SĐT:012345678</a>
+								</li>
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">
+										<i class="fas fa-user-shield"></i>
+									Quản lý:Phạm Sỹ Trung</a>
+								</li>
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">
+										<i class="fas fa-map-marker-alt"></i>
+									Địa chỉ:161 Tôn Thất Thuyết-Hà Nội</a>
+								</li>
+								<li class="footer-item">
+									<a href="#" class="footer-item-link">
+										<i class="fab fa-facebook-f"></i>
+									Facebook:TrungPham</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3 class="footer-header">
+							Địa chỉ khách sạn
+							</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.290162140707!2d105.78493231479354!3d20.981002786024256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ade1a3c1bb5d%3A0x5672057fb1892ed3!2zSOG7jWMgVmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IENow61uaCBWaeG7hW4gVGjDtG5n!5e0!3m2!1svi!2s!4v1588590848887!5m2!1svi!2s" width="250" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a href="#" class="footer-bottom">© Bản quyền thuộc về ATR Hotel .  Mã nguồn NukeViet CMS.  Thiết kế bởi Phạm Sỹ Trung </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
